@@ -10,5 +10,4 @@ public class SpiderStart {
 		Spider.crawler();
 		SpiderIndex.input(str);
 	}
-
 }
