@@ -4,7 +4,6 @@ import java.io.RandomAccessFile;
 
 public class IndexUtil {
 	public static String index(String pos, String size, String dataFile) {
-
 		String encoding = "utf-8";
 		String str = "";
 		RandomAccessFile raf = null;
