@@ -24,7 +24,6 @@ public class RegexUtil {
 		Matcher m = p.matcher(input);
 		while (m.find()) {
 			result = m.group(grpNum);
-
 		}
 		return result;
 	}

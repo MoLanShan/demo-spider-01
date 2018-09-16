@@ -26,7 +26,6 @@ public class WebUtil {
 			e.printStackTrace();
 		} finally {
 			CloseUtil.close(br);
-
 		}
 
 		return sb.toString();
@@ -50,7 +49,6 @@ public class WebUtil {
 		} finally {
 			CloseUtil.close(bis);
 			CloseUtil.close(baos);
-
 		}
 		return byteArray;
 	}
