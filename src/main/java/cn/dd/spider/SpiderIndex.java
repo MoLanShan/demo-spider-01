@@ -9,13 +9,13 @@ import cn.dd.util.IndexUtil;
 
 public class SpiderIndex {
 	public static void main(String[] args) {
-		String str = "http://news.sina.com.cn/c/nd/2018-08-23/doc-ihicsiav8438010.shtml";
-		SpiderIndex.input(str);
+		String str = "http://news.sina.com.cn/c/nd/2018-09-12/doc-ihiycyfx7821477.shtml";
+		SpiderIndex.input(str,"09月12日");
 	}
 
-	public static void input(String str) {
-		String indexFile = "F:" + File.separator+ "/something/08月23日/spider_index.dat";
-		String dataFile = "F:" + File.separator+ "/something/08月23日/spider_data.dat";
+	public static void input(String str ,String data) {
+		String indexFile = "F:" + File.separator+ "/something/"+data+"/spider_index.dat";
+		String dataFile = "F:" + File.separator+ "/something/"+data+"/spider_data.dat";
 		BufferedReader bu = null;
 		try {
 			bu = new BufferedReader(new InputStreamReader(new FileInputStream(indexFile), "utf-8"));
